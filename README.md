@@ -64,7 +64,7 @@ Sample JSON:
 
 ## Wireframes
 
-Here is my basic wireframe design  https://res.cloudinary.com/dzl2lwcyw/image/upload/v1597634908/Screen_Shot_2020-08-16_at_10.23.19_PM_h15fgr.png
+Here is my basic wireframe design  https://res.cloudinary.com/dzl2lwcyw/image/upload/v1597698734/Screen_Shot_2020-08-17_at_4.06.20_PM_fzfv5j.png
 
 The plan is for my app to have 2 pull down menus to specify the crime type and the state, which appear on the left. The x-axis is time, from 1993 to 2018. The y-axis is the incidence
 
@@ -77,14 +77,15 @@ The functionality will the be divided into two separate lists: MPV and PostMVP. 
 
 
 - baseline HTML 
-
+- retrieve crime data using API
+- plotting data from API
+- CSS: all styling  including flexbox, responsive design
+- Javascript: rendering data for the DOM
 
 
 #### PostMVP  
 
-- CSS: all styling  including flexbox, responsive design
-- Javascript: rendering data for the DOM
-- plotting data from API
+- implement chart JS to show crime data
 
 ## Project Schedule
 
@@ -108,7 +109,7 @@ Include a full list of features that have been prioritized based on the `Time an
 ## Timeframes
 
 
-https://res.cloudinary.com/dzl2lwcyw/image/upload/v1597671594/Screen_Shot_2020-08-17_at_8.37.25_AM_yznamb.png
+https://res.cloudinary.com/dzl2lwcyw/image/upload/v1597699217/Screen_Shot_2020-08-17_at_4.16.41_PM_jysiao.png
 Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
@@ -136,4 +137,4 @@ function reverse(string) {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes. 
+ Use this section to document what changes were made and the reasoning behind those changes.  

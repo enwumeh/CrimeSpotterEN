@@ -31,9 +31,9 @@ span {
   width: 75%;
 }
 
-.statedata {
+/* .statedata {
   padding: 15%;
-}
+} */
 
 select {
   margin: 20px;
@@ -43,4 +43,8 @@ select {
 button{
   height: 30px;
   font-size: 100%;
+}
+
+h3 {
+text-align: right;
 }

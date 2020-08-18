@@ -1,15 +1,46 @@
-h1 {
+* {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 45px;
-  background-color: red;
 
 }
-
-.navbar {
-background-color: red;
+h1 {
+  font-size: 50px;
+  color: navy;
 }
 
-a {
-  background-color: red;
+header {
+text-align: center;
+background-color: darkcyan;
+}
 
+.navbar{
+background-color: black;
+font-size: 30px;
+color: white;
+width: 75%;
+margin: 0 auto;
+}
+
+ a {
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+}
+
+span {
+  display: inline-block;
+  width: 75%;
+}
+
+.statedata {
+  padding: 15%;
+}
+
+select {
+  margin: 20px;
+  font-size: 150%;
+}
+
+button{
+  height: 30px;
+  font-size: 100%;
 }

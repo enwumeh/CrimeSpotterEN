@@ -64,7 +64,7 @@ Sample JSON:
 
 ## Wireframes
 
-Here is my basic wireframe design  https://res.cloudinary.com/dzl2lwcyw/image/upload/v1597698734/Screen_Shot_2020-08-17_at_4.06.20_PM_fzfv5j.png
+Here is my basic wireframe design  https://res.cloudinary.com/dzl2lwcyw/image/upload/v1597845341/Screen_Shot_2020-08-19_at_8.45.29_AM_mwfqzv.png
 
 The plan is for my app to have 2 pull down menus to specify the crime type and the state, which appear on the left. The x-axis is time, from 1993 to 2018. The y-axis is the incidence
 

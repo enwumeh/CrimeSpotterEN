@@ -3,15 +3,15 @@
 
 
 // console.log(baseUrl)
+const API_KEY = 'fqaOG7nblqnvp0dz1Ag2NHZ1sciWe7zipRByMW97'
 
 const getFBIdata = async () => {
-  const API_KEY = 'fqaOG7nblqnvp0dz1Ag2NHZ1sciWe7zipRByMW97' 
   const statesBaseUrl = `https://api.usa.gov/crime/fbi/sapi/api/states?API_KEY=${API_KEY}`;
 
   try {
     const response = await axios.get(statesBaseUrl)
     optionValues(response.data.results)
-  
+
 } catch (error) {
   console.log(`Error logging: ${error}`)
   } 
@@ -42,12 +42,12 @@ form.addEventListener('submit', getValues)
 const getYearData = async () => {
   const API_KEY = 'fqaOG7nblqnvp0dz1Ag2NHZ1sciWe7zipRByMW97' 
   const yearsBaseUrl = `https://api.usa.gov/crime/fbi/sapi/api/estimates/national/1985/2018?API_KEY=${API_KEY}`;
-   
+
 
   try {
     const response = await axios.get(yearsBaseUrl)
     optionValues2(response.data.results)
-  
+
 } catch (error) {
   console.log(`Error logging: ${error}`)
   } 
@@ -77,18 +77,36 @@ function optionValues2(list) {
     select2.append(yearValue2)
     select3.append(yearValue3)
     select4.append(yearValue4)
-   
   })
 
 }
 
 function getValues2(e) {
   e.preventDefault()
-  const optionChoice2 = document.querySelector('#natrangefrom', '#natrangeto')
+  const optionChoice2 = document.querySelector('#natrangefrom').value
+  const optionChoice3 = document.querySelector('#natrangeto').value
+postData()
   console.log(optionChoice2)
 
 }
 
+async function postData(since, until) {
+  const urlNation = `https: api.usa.gov/crime/fbi/api/summarized/estimates/national/${since}/${until}?${API_KEY}`
+  console.log(urlNation)
+  try {
+    const response = await axios.get(urlNation)
+    const logg = response.data.results
+    console.log(logg)
+  }
+  catch(error) {
+    console.log(`Heres the error: ${error}`)
+  }
+}
 
-const form2 = document.querySelector('form')
-form2.addEventListener('submit', getValues2)
+
+// function nationPost()
+
+
+
+// const form2 = document.querySelector('form')
+// form2.addEventListener('submit', getValues2)

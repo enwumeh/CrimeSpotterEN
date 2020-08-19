@@ -58,14 +58,28 @@ getYearData()
 function optionValues2(list) {
   list.forEach((yearElement) => {
     const select = document.querySelector('#natrangefrom')
-    const select2 = document.querySelector( '#natrangeto')
+    const select2 = document.querySelector('#natrangeto')
+    const select3 = document.querySelector('#staterangefrom')
+    const select4 = document.querySelector( '#staterangeto')
     const yearValue = document.createElement('option')
+    const yearValue2 = document.createElement('option')
+    const yearValue3 = document.createElement('option')
+    const yearValue4 = document.createElement('option')
     yearValue.value = yearElement.year
     yearValue.text = yearElement.year
+    yearValue2.value = yearElement.year
+    yearValue2.text = yearElement.year
+    yearValue3.value = yearElement.year
+    yearValue3.text = yearElement.year
+    yearValue4.value = yearElement.year
+    yearValue4.text = yearElement.year
     select.append(yearValue)
-    select2.append(yearValue)
+    select2.append(yearValue2)
+    select3.append(yearValue3)
+    select4.append(yearValue4)
    
   })
+
 }
 
 function getValues2(e) {

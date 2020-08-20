@@ -105,20 +105,14 @@ const getStateData = async (stateInfo) => {
     dataDiv.className = "data-div"
     let orderedL = document.createElement('ul')
     dataDiv.append(orderedL)
-    for (let i = 0; i < data.length; i++) {
-      for (item in data[i]) {
-        console.log(item)
-      }
-    }
-   
-    // console.log(data)
+    pageFormat.append(dataDiv)
     for (let i = 0; i < data.length; i++) {
       // dataDiv.append()
       // console.log(data[i].arson)
       const arson = document.createElement('li')
       arson.textContent = data[i].arson
       orderedL.append(arson)
-       
+
 
       // let ObjKeys = Object.keys(data[0])
       // for (let i = 0; i < dataDiv.length; i++){
@@ -128,20 +122,9 @@ const getStateData = async (stateInfo) => {
 
       // console.log(Object.keys(data[0]))
       // dataDiv.append()
-      // console.log(data[i])
-      for (item in data[i]) {
-        if (item !== "state_id" && item !== "state_abbr") {
-          // console.log(typeof item)
-          let span = document.createElement('span')
-          span.innerText = `${item}` 
-          console.log(span)
-          dataDiv.append(span)
-          //  dataDiv.append(item)
-          // dataDiv.append(data[i][item])
-          pageFormat.append(dataDiv)
-          // console.log(item, data[i][item])
-        }
-      }
+      console.log(data[i])
+      getKey(data[i])
+
     }
     //loop through data and append data to stateDataDiv??
 
@@ -149,6 +132,35 @@ const getStateData = async (stateInfo) => {
   } catch (error) {
     console.log(`Error logging: ${error}`)
   }
+}
+
+function getKey(data) {
+  for (item in data) {
+    console.log(item)
+    const keyArray = [];
+    // keyArray.push(item)
+
+
+    // if (item !== "state_id" && item !== "state_abbr") {
+      // console.log(typeof item)
+      // let span = document.createElement('span')
+      // span.innerText = `${item}` 
+      // console.log(span)
+      // dataDiv.append(span)
+      // dataDiv.append(item)
+      // dataDiv.append(data[i][item])
+      // pageFormat.append(dataDiv)
+      // console.log(item, data[i][item])
+    // }
+    console.log(keyArray)
+
+    // return keyArray
+
+  
+  }
+  keyArray.push(item)
+  // console.log(keyArray)
+
 }
 
 

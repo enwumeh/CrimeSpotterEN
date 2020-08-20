@@ -105,43 +105,32 @@ const getStateData = async (stateInfo) => {
     dataDiv.className = "data-div"
     let orderedL = document.createElement('ul')
     dataDiv.append(orderedL)
-    for (let i = 0; i < data.length; i++) {
-      for (item in data[i]) {
-        console.log(item)
+    
+    for (item in data[0]) {
+      console.log(item)
+      if (item !== "state_id" && item !== "state_abbr" && item !== "rape_revised") {
+        let span = document.createElement('span')
+        span.innerText = item
+        dataDiv.append(span)
       }
     }
-   
-    // console.log(data)
+    //attach categories of crimes to the pageFormat div
+    pageFormat.append(dataDiv)
     for (let i = 0; i < data.length; i++) {
-      // dataDiv.append()
-      // console.log(data[i].arson)
-      const arson = document.createElement('li')
-      arson.textContent = data[i].arson
-      orderedL.append(arson)
-       
-
-      // let ObjKeys = Object.keys(data[0])
-      // for (let i = 0; i < dataDiv.length; i++){
-      //   dataDiv.append(ObjKeys)
-      // }
-      // console.log("HEREEEE", dataDiv[0])
-
-      // console.log(Object.keys(data[0]))
-      // dataDiv.append()
-      // console.log(data[i])
+      let dataDiv = document.createElement('div')
+    dataDiv.className = "data-div"
+      //for each crime, add the number of cases of that crime to a span, then attach that to dataDiv
       for (item in data[i]) {
-        if (item !== "state_id" && item !== "state_abbr") {
-          // console.log(typeof item)
+        console.log(item)
+        if (item !== "state_id" && item !== "state_abbr" && item !== "rape_revised") {
           let span = document.createElement('span')
-          span.innerText = `${item}` 
-          console.log(span)
+          span.innerText = data[i][item]  
           dataDiv.append(span)
-          //  dataDiv.append(item)
-          // dataDiv.append(data[i][item])
-          pageFormat.append(dataDiv)
-          // console.log(item, data[i][item])
         }
       }
+      //attach number of cases per crime of each year to pageFormat div
+      pageFormat.append(dataDiv)
+
     }
     //loop through data and append data to stateDataDiv??
 

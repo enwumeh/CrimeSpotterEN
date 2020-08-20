@@ -39,6 +39,7 @@ span {
   width: 75%;
 }
 
+
 /* .statedata {
   padding: 15%;
 } */
@@ -61,5 +62,11 @@ font-size: 75px;
 .data-div {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   /* flex-flow: row wrap; */
+}
+
+.data-div span {
+  flex: 1;
+  text-align: center;
 }

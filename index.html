@@ -46,33 +46,39 @@
 </div>
   
 </div> -->
-<p>The FBI Crime Data API is a read-only web service that returns JSON or CSV data. It is broadly organized around the data reporting systems the FBI UCR program uses and their related entities. Agencies submit data using one of two reporting formats -- the Summary Reporting System (SRS), or the National Incident Based Reporting System (NIBRS). SRS data is the legacy format that provides aggregated counts of the reported crime offenses known to law enforcement by location.</p>
-    
+    <p>The FBI Crime Data API is a read-only web service that returns JSON or CSV data. It is broadly organized around
+      the data reporting systems the FBI UCR program uses and their related entities. Agencies submit data using one of
+      two reporting formats -- the Summary Reporting System (SRS), or the National Incident Based Reporting System
+      (NIBRS). SRS data is the legacy format that provides aggregated counts of the reported crime offenses known to law
+      enforcement by location.</p>
+
     <h3>State Data</h3>
 
     <div class="state-data">
-    <div id="state-selects">
-      <form>
-        <select name="Select Crime" id="state-select-crime">
-          <option value="0">State:</option>
-        </select>
-        <button id="get-data-button">Get Data</button>
-      </form>
-      <br>
-      <form>
-        <select name="Select Range" id="state-range-from">
-          <option value="0">From:</option>
-        </select>
-        <select name="Select Range" id="state-range-to">
-          <option value="0">To:</option>
+      <!-- <div id="state-selects"> -->
 
-        </select>
-        <!-- <button>Choose Range</button> -->
+        <div class='form-wrap'>
+          <form>
+            <select name="Select Crime" id="state-select-crime">
+              <option value="0">State:</option>
+            </select>
+            <button id="get-data-button">Get Data</button>
+          </form>
+          <br>
+          <form>
+            <select name="Select Range" id="state-range-from">
+              <option value="0">From:</option>
+            </select>
+            <select name="Select Range" id="state-range-to">
+              <option value="0">To:</option>
 
-      </form>
+            </select>
+
+          </form>
+        </div>
+      <!-- </div> -->
+      <div class="page-format"></div>
     </div>
-    <div class="page-format"></div>
-  </div>
 
   </main>
 </body>

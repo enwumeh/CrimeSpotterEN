@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 .
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" title="no title">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./app.js" defer></script>
+  <script src="./app.js" defer></script>
   <title>CrimeSpotter</title>
 </head>
 
 <body>
-  <header><h1>CrimeSpotter</h1>
+  <header>
+    <h1>CrimeSpotter</h1>
 
-    <div class ="navbar">
+    <div class="navbar">
       <a href="#National-Data">National Data</a>
       <a href="#State-Data">State Data</a>
-  </div>
+    </div>
   </header>
-<main>
-  <p><h3><a name="National-Data"></a ></h3>National Data</p>
+  <main>
+    <!-- <p><h3><a name="National-Data"></a ></h3>National Data</p>
 
   <div class ="natdata">
   <div id="natselects">
     <form>
-      <!-- <select name ="Select Crime" id="natselectcrime">
+      <select name ="Select Crime" id="natselectcrime">
         <option value = "0">Crime:</option>
       </select>
       <button>Choose National Crime</button>
-      <br> -->
+      <br>
       <select name ="Select Range" id="natrangefrom">
         <option value = "0">From:</option>
       </select>
@@ -37,39 +39,40 @@
         <option value = "0">To:</option>
 
       </select>
-      <!-- <button>Choose Range</button> -->
+      <button>Choose Range</button>
 
   </form>
 </div>
   
-</div>
-  <br>
-  <p><h3><a name="State-Data"></a ></h3>State Data</p>
+</div> -->
+    <br>
+    <p>
+    <h3><a name="State-Data"></a></h3>State Data</p>
 
-  <div class = "statedata"></div>
-  <div id="stateselects">
-    <form>
-      <select name ="Select Crime" id="stateselectcrime">
-        <option value = "0">State:</option> 
-      </select>
-      <button>Get Data</button>
-    </form>
+    <div class="state-data"></div>
+    <div id="state-selects">
+      <form>
+        <select name="Select Crime" id="state-select-crime">
+          <option value="0">State:</option>
+        </select>
+        <button id="get-data-button">Get Data</button>
+      </form>
       <br>
       <form>
-      <select name ="Select Range" id="staterangefrom">
-        <option value = "0">From:</option>
-      </select>
-      <select name ="Select Range" id="staterangeto">
-        <option value = "0">To:</option>
+        <select name="Select Range" id="state-range-from">
+          <option value="0">From:</option>
+        </select>
+        <select name="Select Range" id="state-range-to">
+          <option value="0">To:</option>
 
-      </select>
-      <!-- <button>Choose Range</button> -->
+        </select>
+        <!-- <button>Choose Range</button> -->
 
-  </form>
-</div>
-  
-  
-</main>
+      </form>
+    </div>
+    <div class="page-format"></div>
+
+  </main>
 </body>
 
 </html>

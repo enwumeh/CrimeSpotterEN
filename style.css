@@ -28,21 +28,26 @@ width: 75%;
 margin: 0 auto;
 }
 
+.page-format {
+width: 75vw;
+}
+
  a {
   color: white;
   text-decoration: none;
   text-align: 30px;
 }
 
-span {
-  display: inline-block;
-  width: 75%;
+/* span { */
+  /* display: inline-block; */
+  /* width: 75%; */
+/* } */
+
+
+
+.state-data {
+  display: flex;
 }
-
-
-/* .statedata {
-  padding: 15%;
-} */
 
 select {
   margin: 20px;
@@ -62,11 +67,17 @@ font-size: 75px;
 .data-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* flex-flow: row wrap; */
 }
 
-.data-div span {
-  flex: 1;
+.data-div div {
+  flex-basis: 1;
   text-align: center;
+  width: 85px;
+}
+
+.crime-types {
+  font-style: bold;
+  text-decoration: underline;
 }

@@ -100,17 +100,19 @@ const getStateData = async (stateInfo) => {
 
   try {
     const response = await axios.get(chooseStateUrl)
+    document.querySelectorAll('.data-div').forEach((div) => div.remove())
+    
     let data = response.data.results
     let dataDiv = document.createElement('div')
     dataDiv.className = "data-div"
-    let orderedL = document.createElement('ul')
-    dataDiv.append(orderedL)
+   
     
     for (item in data[0]) {
       console.log(item)
       if (item !== "state_id" && item !== "state_abbr" && item !== "rape_revised") {
-        let span = document.createElement('span')
-        span.innerText = item
+        let span = document.createElement('div')
+        span.className = 'crime-types'
+        span.innerText = item.slice(0,14)
         dataDiv.append(span)
       }
     }
@@ -123,7 +125,7 @@ const getStateData = async (stateInfo) => {
       for (item in data[i]) {
         console.log(item)
         if (item !== "state_id" && item !== "state_abbr" && item !== "rape_revised") {
-          let span = document.createElement('span')
+          let span = document.createElement('div')
           span.innerText = data[i][item]  
           dataDiv.append(span)
         }

@@ -70,6 +70,7 @@ main {
   .crime-types {
     display: flex;
     flex-wrap: wrap-reverse;
+    font-size: 2px;
   }
 h3 {
   font-size: 30%;
